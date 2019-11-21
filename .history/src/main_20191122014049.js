@@ -12,8 +12,6 @@ import './assets/css/loading.css'
 import './assets/css/loading-btn.css'
 
 Vue.config.productionTip = false
-Vue.use(BootStrapVue)
-Vue.use(VueChatScroll)
 
 new Vue({
   router,
