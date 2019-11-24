@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Login from './views/Login'
-import ChatDashBoard from './views/ChatDashBoard.vue'
+import ChatDashBoard from './views/ChatDashboard.vue'
 
 Vue.use(Router)
 
