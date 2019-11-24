@@ -6,17 +6,13 @@ import actions from './actions'
 
 Vue.use(Vuex)
 
-const debug = process.env.NODE_ENV !== 'production'
-
-const vuexLocal = new VuexPresistence({
-  strage: window.localStorage
-});
-
 export default new Vuex.Store({
   state: {
   },
-  mutations,
-  actions,
-  plugins: [vuexLocal.plugin],
-  strict: debug
+  mutations: {
+  },
+  actions: {
+  },
+  modules: {
+  }
 })

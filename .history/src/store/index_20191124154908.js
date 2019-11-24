@@ -17,6 +17,6 @@ export default new Vuex.Store({
   },
   mutations,
   actions,
-  plugins: [vuexLocal.plugin],
+  plugins: [vuexLocal, plugin],
   strict: debug
 })
