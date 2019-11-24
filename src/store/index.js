@@ -14,6 +14,19 @@ const vuexLocal = new VuexPresistence({
 
 export default new Vuex.Store({
   state: {
+    loading: false,
+    sending: false,
+    error: null,
+    user: [],
+    reconnect: false,
+    activeRoom: null,
+    rooms: [],
+    users: [],
+    messages: [],
+    userTyping: null
+  },
+  getters: {
+    hasError: state => state.error ? true: false
   },
   mutations,
   actions,
