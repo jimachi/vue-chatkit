@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { mapstate,mapGetters, mapState } from 'vuex'
+import { mapState,mapGetters } from 'vuex'
 
 export default {
     name: 'login-form',
@@ -49,7 +49,7 @@ export default {
             'error'
         ]),
         ...mapGetters([
-        'hasError'
+            'hasError'
         ])
     }
 }

@@ -9,7 +9,7 @@ Vue.use(Vuex)
 const debug = process.env.NODE_ENV !== 'production'
 
 const vuexLocal = new VuexPresistence({
-  strage: window.localStorage
+  storage: window.localStorage
 });
 
 export default new Vuex.Store({
@@ -26,7 +26,7 @@ export default new Vuex.Store({
     userTyping: null
   },
   getters: {
-    hasError: state => state.error ? true: false
+    hasError: state => state.error ? true : false
   },
   mutations,
   actions,
