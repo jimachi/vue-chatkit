@@ -5,11 +5,11 @@
                      bg-variant="info"
                      text-variant="white">
             <p>For more information visit website</p>
-            <b-btn target="_blank" href="https://pusher.com/chatkit">More Info<b-btn>
+            <b-btn target="_blank" href="https://pusher.com/chatkit">More Info</b-btn>
         </b-jumbotron>
         <b-container>
             <b-row>
-                <b-col lg="4" md="3"><b-col>
+                <b-col lg="4" md="3"></b-col>
                 <b-col lg="4" md="6">
                     <LoginForm />
                 </b-col>
