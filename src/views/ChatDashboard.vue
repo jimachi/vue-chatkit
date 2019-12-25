@@ -33,6 +33,7 @@
 import ChatNavBar from "../components/ChatNavBar"
 import RoomList from "../components/RoomList"
 import MessageList from "../components/MessageList"
+import MessageForm from "../components/MessageForm"
 import UserList from "../components/UserList"
 import { mapState } from "vuex";
 
@@ -42,7 +43,8 @@ export default {
     ChatNavBar,
     RoomList,
     MessageList,
-    UserList
+    UserList,
+    MessageForm
   },
   computed: {
     ...mapState([
