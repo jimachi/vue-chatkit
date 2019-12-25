@@ -3,7 +3,7 @@
     <small class="text-muted">@{{ user.username }}</small>
     <b-form @submit.prevent="onSubmit" class="ld-over" v-bind:class="{ running: sending }">
       <div class="ld ld-ring ld-spin"></div>
-      <b-alert variant="danger" :show="hadError">{{ error }}</b-alert>
+      <b-alert variant="danger" :show="hasError">{{ error }}</b-alert>
       <b-form-group>
         <b-form-input id="message-input"
                       type="text"
