@@ -12,7 +12,7 @@ export default {
     state.reconnect = reconnect;
   },
   setActiveRoom(state, roomId) {
-    state.activeroom = roomId;
+    state.activeRoom = roomId;
   },
   setRooms(state, rooms) {
     state.rooms = rooms;
@@ -20,7 +20,7 @@ export default {
   setUsers(state, users) {
     state.users = users;
   },
-  clearChatRooms(state) {
+  clearChatRoom(state) {
     state.users = [];
     state.messages = [];
   },
