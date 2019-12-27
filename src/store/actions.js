@@ -20,8 +20,20 @@ export default {
       });
       commit("setReconnect", false);
 
-      // Test state.user
-      console.log("state.user", state.user);
+      const rooms = currentUser.rooms.map(room => ({
+        id: room.id,
+        name: room.name
+      }));
+      commit("setRooms", rooms);
+
+      const ActiveRoom = state.ActiveRoom || rooms[0];
+      commit("setActiveRoom", {
+        id: ActiveRoom.id,
+        name: ActiveRoom.name
+      });
+      await chatkit.subscribeToRoom(ActiveRoom.id);
+
+      return true;
     } catch(error) {
       handleError(commit, error)
     } finally {
