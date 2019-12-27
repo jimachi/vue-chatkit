@@ -8,13 +8,14 @@
                         :active="activeRoom.id === room.id"
                         href="#"
                         @click="onChange(room)">
+      # {{ room.name }}
       </b-list-group-item>
     </b-list-group>
   </div>
 </template>
 
 <script>
-import { mapState } from "vuex"
+import { mapState, mapActions } from "vuex"
 
 export default {
   name: "RoomList",
@@ -23,6 +24,14 @@ export default {
       "rooms",
       "activeRoom"
     ])
+  },
+  methods: {
+    ...mapActions([
+      "changeRoom"
+    ]),
+    onChange(room) {
+      this.changeRoom(room.id)
+    }
   }
 }
 </script>
