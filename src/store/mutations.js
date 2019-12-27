@@ -34,7 +34,7 @@ export default {
     state.sending = status;
   },
   setUserTyping(state, userId) {
-    state.userTyping = userId
+    state.userTyping = userId;
   },
   reset(state) {
     state.error = null;

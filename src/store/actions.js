@@ -27,7 +27,6 @@ export default {
       commit("setRooms", rooms);
 
       const activeRoom = state.ActiveRoom || rooms[0];
-      console.log("acR", activeRoom)
       commit("setActiveRoom", {
         id: activeRoom.id,
         name: activeRoom.name
